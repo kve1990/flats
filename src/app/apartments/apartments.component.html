@@ -1,0 +1,24 @@
+<div class="cards">
+  <div *ngFor="let item of list" class="card card-list">
+    <div class="card-image"><img src="{{item.img || 'assets/img/card.jpg'}}"></div>
+    <div class="card-spoiler">
+      <div class="card-floor">{{item.floor_count}}</div>
+      <div class="card-stage">{{item.floor_count}}</div>
+    </div>
+    <div class="card-content">
+      <h2>{{item.caption}}</h2>
+      <div class="card-content-description">{{item.description | slice:0:150 }}</div>
+    </div>
+    <div class="card-details">
+      <div class="card-details-price">
+        от<span class="card-price">{{ item.min_price_area }}</span>тыс.м
+      </div>
+      <button routerLink="/detail/{{item.building_id}}" class="card-details-btn">Детали</button>
+    </div>
+    <div class="card-icons">
+      <i class="material-icons">star</i>
+      <i class="material-icons">thumb_up</i>
+      <i class="material-icons">check_box</i>
+    </div>
+  </div>
+</div>

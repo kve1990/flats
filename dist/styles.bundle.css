@@ -1,0 +1,29 @@
+:root {
+  font-size: 62.5%; }
+
+* {
+  box-sizing: border-box;
+  -webkit-transition: all ease-in-out .5s;
+  transition: all ease-in-out .5s; }
+
+html, body {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  background: #e6e9ec; }
+
+button, input, select {
+  margin: 0;
+  border: 0;
+  outline: 0; }
+
+.container {
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  max-width: 123.2rem; }
+
+.l-constrained {
+  max-width: pxtoem(1140, 16);
+  padding: 0 pxtoem(20, 16);
+  margin: 0 auto; }
+/*# sourceMappingURL=styles.bundle.map*/
